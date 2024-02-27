@@ -6,12 +6,13 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Buttons extends JPanel implements ActionListener {
-    
+
     JButton[] buttons = new JButton[7];
     int buttonWidth = 90;
     int buttonHeight = 90;
     int panelWidth = 700;
     int panelHeight = 100;
+    Board board = new Board();
 
     public Buttons() {
         setPreferredSize(new Dimension(panelWidth, panelHeight));
@@ -31,19 +32,15 @@ public class Buttons extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == buttons[0]){
-            System.out.println("Button 1 was clicked");
+            board.dropDisk(0, 0, Color.RED);
+            System.out.println("Button 1 pressed");
         } else if(e.getSource() == buttons[1]){
-            System.out.println("Button 2 was clicked");
+
         } else if(e.getSource() == buttons[2]){
-            System.out.println("Button 3 was clicked");
         } else if(e.getSource() == buttons[3]){
-            System.out.println("Button 4 was clicked");
         } else if(e.getSource() == buttons[4]){
-            System.out.println("Button 5 was clicked");
         } else if(e.getSource() == buttons[5]){
-            System.out.println("Button 6 was clicked");
         } else if(e.getSource() == buttons[6]){
-            System.out.println("Button 7 was clicked");
         }
     }
 }

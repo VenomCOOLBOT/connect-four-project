@@ -13,10 +13,11 @@ public class ConnectFour extends JFrame{
         add(board, BorderLayout.CENTER);
         add(buttons, BorderLayout.SOUTH);
         pack();
+        
     }
 
     public static void main(String[] args){
-        ConnectFour c4 = new ConnectFour();
+        new ConnectFour();
     }
 
 }
