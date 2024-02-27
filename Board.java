@@ -1,5 +1,4 @@
 import java.awt.Dimension;
-import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ public class Board extends JPanel {
     public Board() {
         setPreferredSize(new Dimension(boardWidth, boardHeight));
         setBackground(Color.BLUE);
-        this.setFocusable(true);
         disks = new ArrayList<>();
         initializeBoard();
     }

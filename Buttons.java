@@ -32,7 +32,7 @@ public class Buttons extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == buttons[0]){
-            board.dropDisk(0, 0, Color.RED);
+            board.dropDisk(2, 2, Color.RED);;
             System.out.println("Button 1 pressed");
         } else if(e.getSource() == buttons[1]){
 
