@@ -3,7 +3,7 @@ import javax.swing.JFrame;
 
 public class ConnectFour extends JFrame{
     Board board = new Board();
-    Buttons buttons = new Buttons();
+    Buttons buttons = new Buttons(board);
     public ConnectFour(){
         setTitle("Connect Four");
         setResizable(false);
